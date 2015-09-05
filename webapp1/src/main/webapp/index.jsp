@@ -1,15 +1,5 @@
 <html>
 <body>
-<h2>Hello World!</h2>
-
-<%
-
-String raika = "Raika";
-
-
-%>
-
-<%= raika.toUpperCase() %>
-
+<h2>Em breve a biblioteca Lulu & Lele</h2>
 </body>
 </html>

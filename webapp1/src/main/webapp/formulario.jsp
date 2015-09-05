@@ -4,13 +4,19 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Formulario</title>
+<title>Biblioteca Particular</title>
 </head>
 <body>
 
-<h2>Formulario</h2>
+<h2>Formulario de inclusao</h2>
 <form action="/webapp1/segundo" method="post">
-Nome: <input type="text" name="nome" size="40"><input type="submit" value="Enviar">
+Titulo:<input type="text" name="titulo" size="40">
+<br>
+Autor: <input type="text" name="autor" size="40">
+<br>
+Local Armazenado: <input type="text" name="local" size="40">
+<br>
+<input type="submit" value="Enviar">
 </form>
 
 </body>

@@ -24,7 +24,9 @@ public class FirstServlet extends HttpServlet {
 		System.out.println("Hollas Mundo!");
 
 		PrintWriter pw = resp.getWriter();
-		pw.write("Eu sou o primeiro!");
+		pw.write("Bem vindo a nossa Biblioteca particular!");
+		pw.println();
+		pw.write("Inclua ou procure seus livros.");
 		
 	}
 

@@ -14,10 +14,16 @@
 		<servlet-name>SecondServlet</servlet-name>
 		<servlet-class>webapp1.SecondServlet</servlet-class>
 	</servlet>
+	<servlet>
+		<servlet-name>ThirdServlet</servlet-name>
+		<display-name>ThirdServlet</display-name>
+		<description></description>
+		<servlet-class>webapp1.ThirdServlet</servlet-class>
+	</servlet>
 	
 	<servlet-mapping>
 		<servlet-name>FirstServlet</servlet-name>
-		<url-pattern>/primeiro</url-pattern>
+		<url-pattern>/ola</url-pattern>
 	</servlet-mapping>
 
 	<servlet-mapping>
@@ -27,12 +33,11 @@
 
 	<servlet-mapping>
 		<servlet-name>SecondServlet</servlet-name>
-		<url-pattern>/segundo</url-pattern>
+		<url-pattern>/novolivro</url-pattern>
 	</servlet-mapping>
-
 	<servlet-mapping>
-		<servlet-name>SecondServlet</servlet-name>
-		<url-pattern>/segundo-do-luis</url-pattern>
+		<servlet-name>ThirdServlet</servlet-name>
+		<url-pattern>/ThirdServlet</url-pattern>
 	</servlet-mapping>
 
 </web-app>

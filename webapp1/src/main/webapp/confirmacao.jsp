@@ -4,14 +4,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Formulario Saida</title>
+<title>Insert title here</title>
 </head>
 <body>
-<%
-final String nome = (String) request.getAttribute ("novoNome");
-%>
-
-<h1><%= nome %></h1>
-
+ <h2>Item incluido com sucesso!</h2>
 </body>
 </html>

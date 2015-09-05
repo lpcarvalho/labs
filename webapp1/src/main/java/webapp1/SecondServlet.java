@@ -27,10 +27,14 @@ public class SecondServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		String nome = req.getParameter("nome");
-		req.setAttribute("novoNome", nome.toUpperCase());
+		Livros lv = new Livros();
+		lv.setTitulo(req.getParameter("titulo"));
+		lv.setAutor(req.getParameter("autor"));
+		lv.setLocal(req.getParameter("local"));
+		//req.setAttribute("novoNome", nome.toUpperCase());
+		// adicionar livro
 		
-		RequestDispatcher dispatcher = req.getRequestDispatcher("formulario-saida.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("confirmacao.jsp");
 		dispatcher.forward(req, resp);;
 	}
 	
