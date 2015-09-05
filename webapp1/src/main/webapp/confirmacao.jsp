@@ -4,9 +4,18 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>Livro Incluido</title>
 </head>
 <body>
- <h2>Item incluido com sucesso!</h2>
+<%
+final String nome = (String) request.getAttribute ("numLivros");
+%>
+<h3><%= nome %></h3>
+
+<form action="/webapp1/novolivro" method="get">
+<br>
+<input type="submit" value="ok">
+</form>
+
 </body>
 </html>

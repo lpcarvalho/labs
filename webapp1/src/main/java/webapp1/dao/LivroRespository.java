@@ -33,8 +33,23 @@ public class LivroRespository {
 		return livros.get(index);
 	}
 	
+	public int getNumLivros() {
+		return livros.size();
+	}
+	
 	public Livro findByName(final String name) {
-		// TODO
+		for (Livro lv : livros) {
+			if (lv.getTitulo().contains(name) )
+				return lv;
+		}
+		return null;
+	}
+	
+	public Livro findByAutor(final String name) {
+		for (Livro lv : livros) {
+			if (lv.getAutor().contains(name) )
+				return lv;
+		}
 		return null;
 	}
 	

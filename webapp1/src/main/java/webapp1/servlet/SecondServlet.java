@@ -25,22 +25,21 @@ public class SecondServlet extends HttpServlet {
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 		RequestDispatcher dispatcher = req.getRequestDispatcher("formulario.jsp");
-		dispatcher.forward(req, resp);;
+		dispatcher.forward(req, resp);
 	}
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		LivroRespository respository = LivroRespository.getInstance();
+		LivroRespository repository = LivroRespository.getInstance();
 		
 		Livro lv = new Livro();
 		lv.setTitulo(req.getParameter("titulo"));
 		lv.setAutor(req.getParameter("autor"));
 		lv.setLocal(req.getParameter("local"));
-		//req.setAttribute("novoNome", nome.toUpperCase());
-		// adicionar livro
-		
+		repository.add(lv);
+		req.setAttribute("numLivros", "Livro "+ repository.getNumLivros() + " inserido!");		
 		RequestDispatcher dispatcher = req.getRequestDispatcher("confirmacao.jsp");
-		dispatcher.forward(req, resp);;
+		dispatcher.forward(req, resp);
 	}
 	
 }
