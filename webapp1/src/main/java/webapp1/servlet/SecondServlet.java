@@ -1,7 +1,7 @@
 /**
  * 
  */
-package webapp1;
+package webapp1.servlet;
 
 import java.io.IOException;
 
@@ -10,6 +10,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import webapp1.dao.LivroRespository;
+import webapp1.data.Livro;
 
 /**
  * @author leticiapc
@@ -27,7 +30,9 @@ public class SecondServlet extends HttpServlet {
 
 	@Override
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		Livros lv = new Livros();
+		LivroRespository respository = LivroRespository.getInstance();
+		
+		Livro lv = new Livro();
 		lv.setTitulo(req.getParameter("titulo"));
 		lv.setAutor(req.getParameter("autor"));
 		lv.setLocal(req.getParameter("local"));

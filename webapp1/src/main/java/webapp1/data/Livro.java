@@ -1,6 +1,6 @@
-package webapp1;
+package webapp1.data;
 
-public class Livros {
+public class Livro {
 	
 	String titulo, autor, local;
 
