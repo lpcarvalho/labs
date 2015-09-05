@@ -30,4 +30,9 @@
 		<url-pattern>/segundo</url-pattern>
 	</servlet-mapping>
 
+	<servlet-mapping>
+		<servlet-name>SecondServlet</servlet-name>
+		<url-pattern>/segundo-do-luis</url-pattern>
+	</servlet-mapping>
+
 </web-app>
