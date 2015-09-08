@@ -34,8 +34,8 @@
 			<td> <tt><%=lv.getAutor()%></tt> <td>
 			<td> <tt><%=lv.getLocal()%></tt> <td>
 			<td>
-					<a href="/biblioteca-web/novolivro?alterar=0">(Alterar Livro)</a>
-					<a href="/biblioteca-web/novolivro?excluir=0">(Excluir Livro)</a>
+					<a href="/biblioteca-web/novolivro?alterar=<%=id%>">(Alterar Livro)</a>
+					<a href="/biblioteca-web/novolivro?excluir=<%=id%>">(Excluir Livro)</a>
 			<td>
 		<% 	} %>
 		<tr>

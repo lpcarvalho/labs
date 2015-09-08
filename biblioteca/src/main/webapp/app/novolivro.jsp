@@ -10,7 +10,7 @@
 <%  String pValue = request.getParameter("alterar").toString();  
 	String param = "";
 	if (pValue != null)
-		param = "?alterar:"+ pValue;
+		param = "?alterar="+ pValue;
 %>
 <h2>Formulario de Inclusao / Alteracao</h2>
 <form action="/biblioteca-web/novolivro<%=param%>" method="POST">
