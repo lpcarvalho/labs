@@ -35,12 +35,12 @@ public class CadastroServlet extends HttpServlet {
 			dispatcher = request.getRequestDispatcher("/app/cadastro.jsp");
 		else {
 			if (request.getParameter("excluir") != null) {
-				repository.getAll().remove(0);
+				repository.getAll().remove(request.getParameter("excluir"));
 				dispatcher = request.getRequestDispatcher("/livros");
 			}
 			else {
 				if (request.getParameter("alterar") != null) {
-					Livro lv = repository.findByIndex(0);
+					Livro lv = repository.findByIndex(Integer.parseInt(request.getParameter("alterar")));
 					request.setAttribute("tituloatual", lv.getTitulo());
 					request.setAttribute("autoratual", lv.getAutor());
 					request.setAttribute("localatual", lv.getLocal());

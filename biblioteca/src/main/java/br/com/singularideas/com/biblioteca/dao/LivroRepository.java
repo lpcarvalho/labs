@@ -25,6 +25,19 @@ public class LivroRepository {
 		return livros;
 	}
 	
+	public List<Livro> getSelection(String name, String autor) {
+		List<Livro> lv = new ArrayList<Livro>();
+		for (Livro l : livros) {
+			if (l.getTitulo().contains(name) )
+				lv.add(l);
+		}
+		for (Livro l : livros) {
+			if (l.getAutor().contains(autor) )
+				lv.add(l);
+		}
+		return lv;
+	}
+	
 	public void add(final Livro livro) {
 		livros.add(livro);
 	}

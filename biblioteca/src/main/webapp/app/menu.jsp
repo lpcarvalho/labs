@@ -17,6 +17,7 @@
 				<ul>
 					<li><a href="/biblioteca-web/livros">Lista Livros </a></li>
 					<li><a href="/biblioteca-web/novolivro"> Novo Livro</a></li>
+					<li><a href="/biblioteca-web/consultalivro"> Consulta Livro</a></li>
 				</ul>
 			<td>
 		</tr>
